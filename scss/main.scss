@@ -1,0 +1,248 @@
+$ancho: 1224px;
+$verde: #C4DBBA;
+$azul: #474A55;
+
+@import "tipografias";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size:small;
+    color: black;
+}
+
+/* style header */
+
+.logo{
+    animation-duration: 2s;
+    animation-name: aparecer;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+
+.cabecera div{
+    width: 100%;
+    height: 140px;
+}
+.blanco {
+    background: white;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: auto; 
+  }
+
+.logo img{
+    display: inline-block;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+}
+
+.menu{
+    max-width: $ancho;
+    width: 90%;
+    margin: 0 auto;
+    ul{
+        display: inline-block;
+        position: absolute;
+        top: 7vh;
+        right: 3vw;
+        li{
+            display: inline-block;
+            padding: 0px;
+            margin: 5px 10px 0px 5px;
+            a{
+                color:black;
+            }
+        }
+    }
+        
+}
+
+
+
+  /* info */
+
+
+.información{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  text-align: center;
+  color: $azul;
+}
+
+.información__titular{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: large;
+}
+.información__titular--parrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: small;
+}
+
+/*productos destacados*/
+
+h2 { 
+    margin-top: 70px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 23px;
+    color: $verde;
+    text-align:center;
+}
+
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    color:$azul;
+
+}
+.destacados{
+ margin-left: 95px;
+ margin-bottom: 30px;
+}
+
+
+/* style footer*/
+
+.titular{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    color:$azul;
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.bajada{
+    color: $azul;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+
+.form-c{
+    text-align: center;
+    background-color:$verde;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.boton{
+    margin-bottom: 30px;
+    margin-top: 20px; 
+    background-color: $azul;
+    border: none;
+    color: white;
+}
+
+.copyright{
+    color: $azul;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* nosotros */
+
+.contenedor{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 70%;
+    margin-left: 200px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.contenedor__nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+
+
+/* cursos & workshops */
+
+.imagenes{
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(1, 1fr);
+  height: auto;
+  margin-top: 20px;
+}
+
+/* tienda online */
+
+.tienda div{
+    display: grid;
+    max-width: $ancho;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/* contacto */
+.containercontacto{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: auto;
+    margin-top: 20px;
+   }
+   
+   .containercontacto__mapa{
+       margin-left: 40px;
+   }
+   
+   .mensaje{
+   width: 400px;
+   height: 200px;
+   }
+   
+   .nombre{
+       width: 400px; 
+   }
+   
+   .email{
+       width: 400px;
+   }
+   
+   .telefono{
+       width: 400px;
+   }
+   
